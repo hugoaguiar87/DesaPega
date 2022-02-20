@@ -1,0 +1,50 @@
+{
+  "name": "desapega",
+  "version": "1.0.0",
+  "description": "Aplicação inspirada na plataforma da Olx",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/server.js",
+    "build": "tsc",
+    "postinstall": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hugoaguiar87/DesaPega.git"
+  },
+  "author": "Hugo Aguiar",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^14.3.2",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "multer": "^1.4.4",
+    "mysql2": "^2.3.3",
+    "passport": "^0.5.2",
+    "passport-jwt": "^4.0.0",
+    "sequelize": "^6.14.1",
+    "sharp": "^0.29.3",
+    "typescript": "^4.5.5",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/multer": "^1.4.7",
+    "@types/node": "^17.0.12",
+    "@types/passport": "^1.0.7",
+    "@types/passport-jwt": "^3.0.6",
+    "@types/sequelize": "^4.28.11",
+    "@types/sharp": "^0.29.5",
+    "@types/validator": "^13.7.1"
+  },
+  "bugs": {
+    "url": "https://github.com/hugoaguiar87/DesaPega/issues"
+  },
+  "homepage": "https://github.com/hugoaguiar87/DesaPega#readme"
+}
