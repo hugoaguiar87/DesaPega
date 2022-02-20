@@ -35,7 +35,7 @@ CREATE TABLE `ads` (
   `id_state` int NOT NULL,
   `dateCreated` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -44,6 +44,7 @@ CREATE TABLE `ads` (
 
 LOCK TABLES `ads` WRITE;
 /*!40000 ALTER TABLE `ads` DISABLE KEYS */;
+INSERT INTO `ads` VALUES (23,7,'Anúncio Teste 1',2,123578.36,1,'Anúncio teste!!',1,1,3,'2022-02-20 14:35:06'),(24,7,'Anúncio 2',1,136980.23,0,'Testando outro anúncio',1,1,5,'2022-02-20 14:36:47');
 /*!40000 ALTER TABLE `ads` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -61,7 +62,7 @@ CREATE TABLE `ads_images` (
   `default` tinyint(1) NOT NULL,
   `id_user` int NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=71 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -70,6 +71,7 @@ CREATE TABLE `ads_images` (
 
 LOCK TABLES `ads_images` WRITE;
 /*!40000 ALTER TABLE `ads_images` DISABLE KEYS */;
+INSERT INTO `ads_images` VALUES (67,23,'577f8f93ebc0bd74fa0d4cef7978ac39.jpeg',1,7),(68,23,'e6f031f4a74a5aa4f43128cf4053c9bf.jpeg',0,7),(69,24,'5708d8428f9dcf6bf684ce1e91efd96d.jpeg',1,7),(70,24,'3e503785134896ab5806811f532a6df0.jpeg',0,7);
 /*!40000 ALTER TABLE `ads_images` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -145,9 +147,13 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (7,'Teste1234','teste@teste.com',3,'$2b$12$3rcRGIB4jhO62VCOh5dvjeQgD9d/jT9nVIYuTZSD6LiAlM.hqBloi');
+INSERT INTO `users` VALUES (7,'Teste','teste@teste.com',3,'$2b$12$3rcRGIB4jhO62VCOh5dvjeQgD9d/jT9nVIYuTZSD6LiAlM.hqBloi');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Dumping routines for database 'olx'
+--
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -158,4 +164,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-02-19 18:33:55
+-- Dump completed on 2022-02-20 11:38:44
