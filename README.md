@@ -66,7 +66,7 @@
 <h2 align="center">Como utilizar a aplicação 🤔</h2>
 
 > ## Clicando no link abaixo
-> - [https://vai-desapega.herokuapp.com/](https://vai-desapega.herokuapp.com/)
+> - [CLIQUE AQUI](https://conscious-zebra.surge.sh/)
 
 
 <h2 align="center">Imagens da Aplicação</h2>
